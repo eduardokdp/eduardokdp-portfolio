@@ -1,0 +1,666 @@
+@import"https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap";.vertical-timeline * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+* {
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    color-scheme: dark;
+}
+
+h1 {
+    margin: 1.8rem 0 0 0;
+    padding: 0;
+}
+
+
+.main-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 70px;
+}
+.about-container {
+    padding: 0 6rem 0 8rem;
+    max-width: 60rem;
+    font-size: 18px;
+}
+
+.about-container p {
+    line-height: 30px;
+}
+
+.experience-container {
+    display: flex;
+    align-items: center;
+    flex-flow: column wrap;
+    font-size: 18px;    
+}
+
+body {
+    background-color: #0b0b0b;
+    font-family: Poppins, sans-serif;
+}
+
+.blue-text-gradient {
+    background: #56ccf2;
+    background: linear-gradient(to top, #2f73cb, rgb(160, 188, 253));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.header {
+    padding-top: 1px;
+    font-size: 40px;
+    letter-spacing: -2px;
+}
+
+.element-header {
+    width: 100%; 
+    background-color: #0b0b0b;
+    height: 115px;
+    position: fixed;
+    top: -16px;
+    left: 0;
+    padding-top: 1.2rem;
+    z-index: 900;
+    
+}
+
+.skills-container {
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    padding: .5rem 2.5rem 0rem 2.0rem;
+    font-weight: 500;
+}
+nav li {
+    height: 75px;
+}
+nav a{
+    height: 100%;
+    font-size: 17.5px;
+    margin-right: 2.0em;
+    margin-left: 2.0em;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: rgb(139 157 199) ;
+}
+
+nav a:hover {
+    color: white;
+    transition: 0.2s ease-in-out;
+
+}
+nav li:first-child{
+    margin-right: auto;
+}
+
+.main-container h1 {
+    font-size: 80px;
+    margin: 1em 0 0 0;
+}
+
+.main-container p {
+    font-size: 30px;
+    margin: auto;
+    font-weight: 500;
+}
+
+.sidebar {
+    position: fixed;
+    top: -13px;
+    right: 0;
+    height: 100vh;
+    z-index: 999;
+    background-color: rgba(35, 35, 35, 0.553);
+    backdrop-filter: blur(12px);
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+
+
+.hide-button {
+    display: none;
+}
+
+.projects-container {
+    padding-left: 8rem;
+    padding-right: 8rem;
+    max-width: 60rem;
+
+}
+
+.projects-container p {
+    margin-bottom: 2.0rem;
+    
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem; 
+    justify-content: center; 
+}
+
+.card1, .card2 {
+    background-color: rgb(43, 44, 56);
+    border-radius: 1.0rem;
+    flex: 1 1 calc(50% - 1rem); 
+}
+
+.project-img {
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+}
+
+.cards img {
+    border-radius: 1.0rem;
+}
+
+.project-info h3 {
+    font-size: 25px;    
+    padding: 0 5px 0 5px;
+    display: flex;
+    justify-content : center;
+}
+.project-info p {
+
+    font-size: 15px;
+    line-height: 30px;
+    padding: 0 1.2rem 1.0rem 1.3rem;
+    color: rgb(139 157 199);
+}
+.github-img {
+    margin: 0 0 1.0rem 1.3rem;
+}
+
+.contact-container {
+    padding-left: 4rem;
+    font-size: 18px;
+    height: 100%;
+    background-color: rgb(43, 44, 56);
+    color: rgb(139 157 199);
+    border-radius: 1.0rem;
+    margin: 0 4rem 0 4rem;
+    
+}
+
+.contact-container p {
+    margin: 0;
+    font-weight: bold;
+}
+.your-contact input, textarea {
+    background-color: rgb(82, 87, 128);
+    box-shadow: rgba(0, 0, 0, 0.683) 0px 12px 20px -10px;
+    border-radius: 1rem;
+    border: none;
+    padding: 1.0rem;
+    margin: 1.0rem 0;
+    font-size: 18px;
+    outline: none;
+    width: 90%;
+    max-width: 500px;
+}
+
+#message {
+    margin-right: 2.0rem;
+    height: 165px;
+    resize: none;
+    width: 90%; 
+    max-width: 500px; 
+}
+#bt2, #bt3 {
+    margin-left: 1.0rem;
+}
+#submit {
+    margin-bottom: 1.0rem;
+}
+
+.contact-button {
+    width: 100px;
+    background-color: rgb(82, 87, 128);
+    border-style: none;
+    border-radius: 1rem;
+    padding: 1.0rem;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 1.0rem;
+    box-shadow: rgba(229, 229, 229, 0.088) 0px 12px 20px -10px;
+}
+
+.contact-container a {
+    text-decoration: none;
+    color: white;
+}
+
+
+.close-menu {
+    position: relative;
+    left: 2.1rem;
+    top: 2.0rem;
+    cursor: pointer;
+}
+
+/* light mode */ 
+body.light-mode {
+    background-color: #ececec;
+    color: #000000;
+}
+
+body.light-mode .element-header,
+body.light-mode .sidebar {
+    background-color: #ececec;
+}
+body.light-mode .contact-container,
+body.light-mode .card1,
+body.light-mode .card2 {
+    background-color: rgba(75, 79, 125, 0.642);
+    color: white;
+}
+
+body.light-mode .sidebar img,
+body.light-mode .element-header img {
+    filter: grayscale(100%);
+}
+
+body.light-mode .sidebar {
+    background-color: rgba(237, 237, 237, 0.456);
+    backdrop-filter: blur(12px);
+}
+
+body.light-mode nav a {
+    color: #2f73cb;
+}
+
+body.light-mode nav a:hover {
+    color: #000000;
+}
+
+body.light-mode .contact-container a,
+body.light-mode .card1 p,
+body.light-mode .card2 p {
+    color: rgb(57, 64, 81);
+}
+
+body.light-mode .blue-text-gradient {
+    background: linear-gradient(to top, #2f73cb, rgb(160, 188, 253));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+body.light-mode .your-contact input, 
+body.light-mode .your-contact textarea {
+    background-color: #e0e0e0;
+    color: #000000;
+}
+
+body.light-mode .contact-button {
+    background-color: #e0e0e0;
+    color: #000000;
+}
+body.light-mode .line {
+    background: rgba(51, 51, 51, 0.019);
+}
+
+body.light-mode .sidebar img {
+    height: 18px;
+    width: 18px;
+}
+
+body.light-mode .content {
+    background-color: rgba(75, 79, 125, 0.642);
+}
+
+body.light-mode .content h2 {
+    color: white;
+}
+
+body.light-mode .content p, 
+body.light-mode .content li {
+    color: rgb(57, 64, 81);
+}
+
+body.light-mode .timeline::after {
+    background-color: black;
+}
+
+body.light-mode .left::before {
+    border: medium solid rgb(0, 0, 0);
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent rgb(0, 0, 0);
+}
+
+
+/* media queries */
+@media(max-width: 1100px) {
+    .header {
+        font-size: 37px;
+        letter-spacing: -2px;
+    }
+    .about-container, 
+    .projects-container{
+        font-size: 17px;
+    }
+    
+
+}
+@media(max-width: 957px) {
+    .project-info p {
+        padding: 0 2rem 0 2rem;
+    }
+    .cards {
+        padding-right: 8rem;
+        padding-left: 8rem;
+    }
+}
+
+@media(max-width: 900px) {
+    
+    .header {
+        font-size: 37px;
+        letter-spacing: -2px;
+    }
+    .about-container,
+    .projects-container {
+        max-width: 47rem;
+        font-size: 17px;
+        padding: 0 2rem 0 4rem;
+    }
+    .contact-container p {
+        font-size: 16px;
+    }
+
+    .contact-container {
+    font-size: 15px;
+    padding-left: 2.0rem;
+    }
+    .contact-button {
+        padding: .7rem;
+        font-size: 15px;
+    }
+}
+@media(max-width: 680px) {
+    .hideOnMobile {
+        display: none;
+    }
+    .hide-button {
+        display: block;
+    }
+    .main-container h1 {
+        font-size: 60px;
+    }
+    .main-container p {
+        font-size: 26px;
+    }
+    .header {
+        font-size: 25px;
+        letter-spacing: -2px;
+    }
+    .about-container,
+    .projects-container {
+        padding: 1.5rem;
+        font-size: 16px;
+    }
+}
+
+@media(max-width: 570px) {
+    .sidebar {
+        width: 100%;
+        top: -12px;
+        
+    }
+
+    .main-container h1 {
+        font-size: 53px;
+    }
+    .main-container p {
+        font-size: 19px;
+    }
+
+    .header {
+        font-size: 23px;
+        letter-spacing: -2px;
+    }
+    .about-container {
+        max-width: 47rem;
+        font-size: 15px;
+    }
+
+    
+
+}
+
+@media(max-width: 425px) {
+    .main-container h1 {
+        font-size: 43px;
+    }
+    .main-container p {
+        font-size: 14px;
+    }
+}
+
+@media(max-width: 370px) {
+    .main-container h1, 
+    .experience-container h1,
+    .projects-container h1,
+    .contact-container h1 {
+        font-size: 37px;
+    }
+    .main-container p {
+        font-size: 12px;
+    }
+
+
+}
+
+
+.hash-span {
+    margin-bottom: 156px;
+    display: block;
+}
+    
+.drop-menu {
+    position: relative;
+    cursor: pointer;
+    width: 25px;
+    bottom: -25px;
+
+
+}
+
+/* main pg animation */
+.line {
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    top: 0;
+    left: 50%;
+    background: rgba(32, 32, 32, 0.1);
+    overflow: clip;
+  }
+.line::after {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 15vh;
+    width: 100%;
+    top: -50%;
+    left: 0;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(164, 173, 194, 0.58) 75%, #5889c9 100%);
+    -webkit-animation: drop 7s 10s infinite;
+            animation: drop 7s 0s infinite;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    -webkit-animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
+            animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
+  }
+  .line:nth-child(1) {
+    margin-left: -25%;
+  }
+  .line:nth-child(1)::after {
+    -webkit-animation-delay: 2s;
+            animation-delay: 2s;
+  }
+  .line:nth-child(3) {
+    margin-left: 25%;
+  }
+  .line:nth-child(3)::after {
+    -webkit-animation-delay: 2.5s;
+            animation-delay: 2.5s;
+  }
+
+  
+  @-webkit-keyframes drop {
+    0% {
+      top: -50%;
+    }
+    100% {
+      top: 110%;
+    }
+  }
+  
+  @keyframes drop {
+    0% {
+      top: -50%;
+    }
+    100% {
+      top: 110%;
+    }
+  }
+
+
+
+  
+  /* The actual timeline (the vertical ruler) */
+  .timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* The actual timeline (the vertical ruler) */
+  .timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: white;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+    border-radius: 5px;
+  }
+  
+  /* Container around content */
+  .container {
+    padding: auto;
+    position: relative;
+    width: 50%;
+    padding-right: 25px;
+    
+  }
+  
+  /* The circles on the timeline */
+  .container::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: white;
+    border: 4px solid #2f73cb;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+  }
+
+  /* Add arrows to the left container (pointing right) */
+  .left::before {
+    content: " ";
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 23px;
+    border: medium solid white;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent white;
+  }
+  
+  
+  /* The actual content */
+  .content {
+    background-color: rgb(43, 44, 56);
+    padding: 0px 10px 15px 15px;
+    position: relative;
+    border-radius: 6px;
+    list-style-type: none;
+    margin-right: 14px;
+  }
+
+  .content h2 {
+    padding-top: 15px;
+    margin-bottom: 0;
+    font-size: 20px;
+  }
+
+  .content ul {
+    padding-left: 20px;
+    padding-right: 5px;
+    font-size: 16px;
+  }
+
+  .content p {
+    color: rgb(139 157 199);
+    font-size: 14px;
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+  }
+
+  
+  /* Media queries - Responsive timeline on screens less than 600px wide */
+  @media screen and (max-width: 815px) {
+  /* Place the timelime to the left */
+    .timeline::after {
+      left: 31px;
+    }
+  
+  /* Full-width containers */
+    .container {
+      width: 100%;
+      padding-left: 70px;
+      padding-right: 25px;
+    }
+  
+  /* Make sure that all arrows are pointing leftwards */
+    .container::before {
+      left: 54px;
+      border: medium solid white;
+      border-width: 10px 10px 10px 0;
+      border-color: transparent white transparent transparent;
+    }
+  
+  /* Make sure all circles are at the same spot */
+    .left::after, .right::after {
+      left: 15px;
+    }
+  }

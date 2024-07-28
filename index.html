@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SWE Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+	<script src="script.js"></script>	
+</head>
+<body>
+	<div class="lines">
+		<div class="line"></div>
+		<div class="line"></div>
+		<div class="line"></div>
+	</div>
+    <nav>
+			<ul class="sidebar">
+				<li onclick="hideSidebar()"><img src="/images/close-white.svg" data-dark="/images/close-white.svg" data-light="/images/close-black.png" alt="menu" class="close-menu"></li>
+				<li><a href="#about">About</a></li>
+				<li><a href="#experience">Experience</a></li>
+				<li><a href="#projects">Projects</a></li>
+				<li><a href="#contact">Contact</a></li>
+				<li onclick="toggleTheme()" style="cursor:pointer;"><a>Theme</a></li>
+			</ul>
+
+        <ul class="element-header">
+            <li><a href="#">Ekdp</a></li>
+            <li class="hideOnMobile"><a href="#about">About</a></li>
+            <li class="hideOnMobile"><a href="#experience">Experience</a></li>
+            <li class="hideOnMobile"><a href="#projects">Projects</a></li>
+			<li class="hideOnMobile"><a href="#contact">Contact</a></li>
+            <li class="hide-button" onclick="showSidebar()"><img src="/images/menu-white.svg" data-dark="/images/menu-white.svg" data-light="/images/menu-black.png" alt="menu" class="drop-menu"></li>
+			<li class="hideOnMobile"><img src="/images/light-mode.svg" id="theme-toggle-icon" alt="Toggle theme" onclick="toggleTheme()" style="cursor:pointer;" width="20px" height="100%"></li>
+
+        </ul>
+    </nav>
+
+	<span class="hash-span" id="work">&nbsp;</span>
+	
+	<div class="main-container">
+    	<h1> Hi, I'm <span class="blue-text-gradient">Eduardo</span></h1> 
+		<p> An aspiring software engineer </p> 
+		<p> Studying CS at the University of Victoria</p>
+	</div>
+
+	<span class="hash-span" id="work">&nbsp;</span>
+	<div id="about"></div>
+	<span class="hash-span" id="work">&nbsp;</span>
+
+	<div class="about-container">
+		<div class="blue-text-gradient header"><h1>About me</h1></div>
+		<p>I'm a university student passionate about creating and solving real life problems with the use of
+			technology. By gaining hands on experience at an array of different jobs, I am equipped with valuable skills 
+			needed to contribute to any team. I am a proactive learner and that makes me a great asset to 
+			have on any team.
+		</p>
+	</div>
+
+	<span class="hash-span" id="work">&nbsp;</span>
+
+	<div id="experience"></div>
+		
+
+	<div class="skills-container">
+		<img data-tilt data-tilt-scale="1.2" data-tilt-max="25" data-tilt-perspective="500" data-tilt-speed="400" data-tilt-transition="true" src="/images/html-92b76a73.png" height="200" width="200" alt="HTML">
+		<img data-tilt data-tilt-scale="1.2" data-tilt-max="25" data-tilt-perspective="500" data-tilt-speed="400" data-tilt-transition="true" src="/images/css-79a7f026.png" height="200" width="200" alt="CSS">
+		<img data-tilt data-tilt-scale="1.2" data-tilt-max="25" data-tilt-perspective="500" data-tilt-speed="400" data-tilt-transition="true" src="/images/javascript-logo-javascript-icon-transparent-free-png.webp" width="200" height="200" alt="JavaScript">
+		<img data-tilt data-tilt-scale="1.2" data-tilt-max="25" data-tilt-perspective="500" data-tilt-speed="400" data-tilt-transition="true" src="/images/typescript-314ea70d.png" height="200" width="200" alt="Python">
+	</div>	
+
+	<div class="experience-container ">
+		<div class="blue-text-gradient header"><h1>My Experience</h1></div>
+		<div class="timeline">
+			<div class="container left">
+			  <div class="content" data-tilt>
+				<h2>BS in Computer Science</h2>
+				<p>University of Victoria</p>
+				<ul><li>Bachelor of Science in Computer Science with a 3.3 GPA</li>
+					<li>Relevent Coursework: Fundamentals of programming, Discrete math, Calculus II</li>
+					<li>Honors & Awards: Certificate of Achievement in Calculus I & II</li>
+				</ul>
+				<p>Sept 2023 - Present</p>
+			  </div>
+			</div>
+			</div>
+		  </div>
+	</div>
+
+	<div id="projects"></div>
+
+	<span class="hash-span" id="work">&nbsp;</span>
+
+
+	<div class="projects-container">
+		<div class="blue-text-gradient header"><h1>Projects</h1></div>
+		<p>The following projects showcases my skills and growing experience.
+			Each project is briefly described with links to code repositories as well as live demos.
+		</p>
+	
+		<div class="cards">
+			<div data-tilt class="card1">
+				<div class="project-img"><img src="/images/pokemon-img.png" alt="pokemon" height="200" width="335"></div>
+	
+				<div class="project-info"><h3>Pokemon Generator</h3>
+					<p>Pokemon generator website that when clicked, will generate a random pokemon and an
+					info card. This website was done in a World Wide Web and Mobile Applications course at the 
+					University of Victoria. This project introducted me to the use of JavaScript in web development as well
+					as how to correctly fetch data from an API.
+					</p>
+					<a href="https://github.com/eduardokdp/pokemon-generator"><img class="github-img" src="/images/github-3b4e1609.png" alt="github" height="50" width="50"></a>
+				</div>
+			</div>
+	
+			<div data-tilt class="card2">
+				<div class="project-img"><img src="/images/calculator-web.png" alt="calculator" height="200" width="335"></div>
+	
+				<div class="project-info"><h3>Grade calculator</h3>
+					<p>The Grade Calculator is a web application designed to help students calculate their 
+						grades easily. Users can input their scores and the corresponding weight of each assessment 
+						to get their final grade. This project demonstrates my skills in web development using HTML, 
+						CSS, and JavaScript.
+					</p>
+					<a href="https://github.com/eduardokdp/grade-calculator"><img class="github-img" src="/images/github-3b4e1609.png" alt="github" height="50" width="50"></a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<span class="hash-span" id="work">&nbsp;</span>
+	<div id="contact"></div>
+	<div class="contact-container">
+		<div class="blue-text-gradient header"><h1>Contact</h1></div>
+		<p>LET'S GET IN TOUCH!</p>
+		<br>
+		<a class="contact-button" href='https://github.com/eduardokdp'>Github</a>
+		<a class="contact-button" href='https://www.linkedin.com/in/eduardo-kallina-411999309/' style="margin-left: 0.4rem;">LinkedIn</a>
+		<a class="contact-button" href='path/to/resume.pdf' style="margin-left: .4rem;">Resume</a>
+		
+		<br><br>
+
+
+		<div class="your-contact">
+			<p>your name: </p>
+			<input type="text" name="name" id="name" required>
+			<p>your email: </p>
+			<input type="text" name="email" id="email" required>
+			<p>your message: </p>
+			<label type="text" name="message" id="message" required>
+				<textarea name="message" id="message" cols="30" rows="10"></textarea>
+			</label>
+		</div>
+		<button class="contact-button" id="submit" onclick="submitForm()">Submit</button>
+	</div>
+		 
+
+</body>
+</html>
+
+
+
