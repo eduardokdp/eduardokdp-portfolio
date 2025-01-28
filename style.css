@@ -458,9 +458,13 @@ body.light-mode .left::before {
     .main-container p {
         font-size: 14px;
     }
+    .contact-button {
+        padding: .7rem .5rem .7rem .5rem;
+        font-size: 13px;
+    }
 }
 
-@media(max-width: 370px) {
+@media(max-width: 375px) {
     .main-container h1, 
     .experience-container h1,
     .projects-container h1,
@@ -470,8 +474,10 @@ body.light-mode .left::before {
     .main-container p {
         font-size: 12px;
     }
-
-
+    .contact-button {
+        padding: .7rem .5rem .7rem .5rem;
+        font-size: 10.5px;
+    }
 }
 
 
