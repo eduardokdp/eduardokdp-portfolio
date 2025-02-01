@@ -10,7 +10,3 @@ Welcome to my portfolio! I'm an aspiring software engineer studying Computer Sci
 - JavaScript
 - HTML
 - CSS
-- Python
-- Java
-- C#
-
