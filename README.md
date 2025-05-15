@@ -4,7 +4,7 @@ Welcome to my portfolio! I'm an aspiring software engineer studying Computer Sci
 
 ## Projects
 - **Pokemon Generator**: A web app that generates a random Pokémon and displays its info. Built with JavaScript and fetch API.
-- **Grade Calculator**: A web app that helps students calculate their grades based on scores and weights.
+- **FPL Dashboard**: A web app that helps users make informed weekly decision for their Fantasy Premier League team.
 
 ## Technologies Used
 - JavaScript
