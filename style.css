@@ -126,7 +126,7 @@ nav li:first-child{
     position: fixed;
     top: -13px;
     right: 0;
-    height: 100vh;
+    height: 102vh;
     z-index: 999;
     background-color: rgba(35, 35, 35, 0.553);
     backdrop-filter: blur(12px);
