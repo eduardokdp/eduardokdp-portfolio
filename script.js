@@ -12,6 +12,8 @@ function handleResize() {
     const sidebar = document.querySelector('.sidebar');
     if (window.innerWidth > 680) {
         sidebar.style.display = 'none';
+    } else {
+        sidebar.style.display = 'none';
     }
 }
 function toggleTheme() {
