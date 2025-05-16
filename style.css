@@ -126,7 +126,7 @@ nav li:first-child{
     position: fixed;
     top: -13px;
     right: 0;
-    height: 102vh;
+    height: 105vh;
     z-index: 999;
     background-color: rgba(35, 35, 35, 0.553);
     backdrop-filter: blur(12px);
@@ -201,6 +201,8 @@ nav li:first-child{
     color: rgb(139 157 199);
     border-radius: 1.0rem;
     margin: 0 4rem 0 4rem;
+    min-width: 320px;
+    max-width: 700px;
     
 }
 
@@ -419,7 +421,6 @@ body.light-mode .left::before {
     }
     .about-container,
     .projects-container {
-        padding: 1.5rem;
         font-size: 16px;
     }
 }
@@ -446,25 +447,31 @@ body.light-mode .left::before {
         max-width: 47rem;
         font-size: 15px;
     }
+    .contact-button {
+        font-size: 14px;
+    }
 
     
 
 }
 
-@media(max-width: 425px) {
+@media(max-width: 470px) {
+    .contact-container {
+        margin: 0 2rem 0 2rem;
+    }
     .main-container h1 {
         font-size: 43px;
     }
     .main-container p {
-        font-size: 14px;
+        font-size: 12px;
     }
     .contact-button {
         padding: .7rem .5rem .7rem .5rem;
-        font-size: 13px;
+        font-size: 12px;
     }
 }
 
-@media(max-width: 375px) {
+@media(max-width: 400px) {
     .main-container h1, 
     .experience-container h1,
     .projects-container h1,
@@ -478,6 +485,23 @@ body.light-mode .left::before {
         padding: .7rem .5rem .7rem .5rem;
         font-size: 10.5px;
     }
+}
+
+@media(max-width: 321px) {
+    .contact-container {
+        padding-bottom: 5px;
+    }
+    .contact-container h1 {
+        font-size: 30px;
+    }
+    .contact-container p {
+        font-size: 12px;
+    }
+
+    .about-container h1 {
+        font-size: 44px;
+    }
+    
 }
 
 
