@@ -1,0 +1,81 @@
+<mxfile>
+  <diagram name="ER Diagram" id="baseball-db">
+    <mxGraphModel dx="1100" dy="600" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        
+        <!-- Entities -->
+        <mxCell id="Personnel" value="Personnel (personnel_id, fname, lname, dob, birthplace)" style="shape=rectangle;rounded=1;fillColor=#dae8fc;" vertex="1" parent="1">
+          <mxGeometry x="40" y="60" width="220" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="Player" value="Player (batting_orientation, lifetime_BA)" style="shape=rectangle;rounded=1;fillColor=#fff2cc;" vertex="1" parent="1">
+          <mxGeometry x="40" y="160" width="220" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="Pitcher" value="Pitcher (lifetime_ERA)" style="shape=rectangle;rounded=1;fillColor=#ffe6cc;" vertex="1" parent="1">
+          <mxGeometry x="40" y="260" width="220" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="Coach" value="Coach" style="shape=rectangle;rounded=1;fillColor=#e1d5e7;" vertex="1" parent="1">
+          <mxGeometry x="300" y="160" width="120" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="Manager" value="Manager" style="shape=rectangle;rounded=1;fillColor=#f8cecc;" vertex="1" parent="1">
+          <mxGeometry x="300" y="240" width="120" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="Umpire" value="Umpire" style="shape=rectangle;rounded=1;fillColor=#d5e8d4;" vertex="1" parent="1">
+          <mxGeometry x="300" y="320" width="120" height="50" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="Team" value="Team (team_name, city, division, league)" style="shape=rectangle;rounded=1;fillColor=#cce5ff;" vertex="1" parent="1">
+          <mxGeometry x="600" y="100" width="230" height="60" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="Game" value="Game (game_id, date, home_team, visitor_team, score, winner, pitchers)" style="shape=rectangle;rounded=1;fillColor=#c2f0c2;" vertex="1" parent="1">
+          <mxGeometry x="600" y="260" width="280" height="80" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="PlayerPerformance" value="PlayerPerformance (singles, doubles, triples, HRs)" style="shape=rectangle;rounded=1;fillColor=#f9e79f;" vertex="1" parent="1">
+          <mxGeometry x="600" y="400" width="280" height="60" as="geometry"/>
+        </mxCell>
+
+        <!-- Relationships (lines) -->
+        <mxCell id="edge1" style="endArrow=none;" edge="1" parent="1" source="Personnel" target="Player">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="edge2" style="endArrow=none;" edge="1" parent="1" source="Player" target="Pitcher">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="edge3" style="endArrow=none;" edge="1" parent="1" source="Personnel" target="Coach">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="edge4" style="endArrow=none;" edge="1" parent="1" source="Personnel" target="Manager">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="edge5" style="endArrow=none;" edge="1" parent="1" source="Personnel" target="Umpire">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="edge6" style="endArrow=classic;" edge="1" parent="1" source="Team" target="Manager">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="edge7" style="endArrow=classic;" edge="1" parent="1" source="Team" target="Coach">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="edge8" style="endArrow=classic;" edge="1" parent="1" source="Team" target="Player">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="edge9" style="endArrow=classic;" edge="1" parent="1" source="Game" target="Team">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="edge10" style="endArrow=classic;" edge="1" parent="1" source="Game" target="Umpire">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="edge11" style="endArrow=classic;" edge="1" parent="1" source="Game" target="PlayerPerformance">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="edge12" style="endArrow=classic;" edge="1" parent="1" source="Player" target="PlayerPerformance">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
