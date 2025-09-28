@@ -2,7 +2,7 @@
 
 Welcome to my portfolio! I'm an aspiring software engineer studying Computer Science at the University of Victoria. This site showcases my work and experience in software development.
 
-Live demo @ https://eduardokdp.vercel.app/#projects
+Live demo @ https://eduardokdp.vercel.app/
 
 ## Projects
 - **Pokemon Generator**: A web app that generates a random Pokémon and displays its info. Built with JavaScript and fetch API.
