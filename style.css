@@ -282,7 +282,7 @@ body.light-mode .sidebar {
 body.light-mode .contact-container,
 body.light-mode .card1,
 body.light-mode .card2,
-body.light-mode .card2 {
+body.light-mode .card3 {
     background-color: rgba(75, 79, 125, 0.642);
     color: white;
 }
