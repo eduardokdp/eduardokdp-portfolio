@@ -281,6 +281,7 @@ body.light-mode .sidebar {
 }
 body.light-mode .contact-container,
 body.light-mode .card1,
+body.light-mode .card2,
 body.light-mode .card2 {
     background-color: rgba(75, 79, 125, 0.642);
     color: white;
@@ -306,7 +307,8 @@ body.light-mode nav a:hover {
 
 body.light-mode .contact-container a,
 body.light-mode .card1 p,
-body.light-mode .card2 p {
+body.light-mode .card2 p,
+body.light-mode .card3 p{
     color: rgb(0, 0, 0);
 }
 
