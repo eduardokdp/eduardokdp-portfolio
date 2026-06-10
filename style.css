@@ -161,7 +161,7 @@ nav li:first-child{
     justify-content: center; 
 }
 
-.card1, .card2 {
+.card1, .card2, .card3 {
     background-color: rgb(43, 44, 56);
     border-radius: 1.0rem;
     flex: 1 1 calc(50% - 1rem); 
